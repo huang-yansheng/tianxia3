@@ -333,7 +333,6 @@ html,
     #bg-a{
         background: url("../img/法医.jpg") no-repeat;
         background-size: cover;
-        z-index: 2;
     }
     #bg-b{
         background: url("../img/男爵.jpg") no-repeat;
@@ -382,6 +381,7 @@ html,
     }
     .sss{
         opacity: 1;
+        z-index: 2;
         p{
             width: 60px;
             transform: translateY(150px);

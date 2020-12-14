@@ -5,6 +5,12 @@ $(function () {
         e.preventDefault();
         $("#friends").css("transform", " translateY(0%)");
     })
+    //滚轮事件
+    $("#friends").on("mousewheel DOMMouseScroll",function(e){
+        if(e.originalEvent.wheelDelta < 0){
+            $("#friends").css("transform", " translateY(100%)")
+        }
+    })
 })
 let timer = setTimeout(bgTime,3000);
 
@@ -21,3 +27,4 @@ function bgTime() {
     clearTimeout(timer);
     timer = setTimeout(bgTime,3000);
 }
+

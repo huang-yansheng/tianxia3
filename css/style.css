@@ -332,7 +332,6 @@ html,
 #friends #bg-a {
   background: url("../img/法医.jpg") no-repeat;
   background-size: cover;
-  z-index: 2;
 }
 #friends #bg-b {
   background: url("../img/男爵.jpg") no-repeat;
@@ -381,6 +380,7 @@ html,
 }
 #friends .sss {
   opacity: 1;
+  z-index: 2;
 }
 #friends .sss p {
   width: 60px;
