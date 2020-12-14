@@ -1,0 +1,313 @@
+*,
+ul {
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+body,
+html,
+#box {
+    height: 100%;
+    font-family: "KaiTi";
+    font-size: 16px;
+}
+
+#box {
+    position: relative;
+    overflow: hidden;
+    background: url("../img/93a8cab28ed0b050d4ee291b6f8fd72.jpg") no-repeat;
+    background-size: cover;
+}
+
+.content {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+#main {
+    background-color: rgb(243, 167, 52);
+    padding: 5px;
+    font-size: 2.5rem;
+    border-radius: 10px;
+}
+
+.dm {
+    margin-bottom: 100px;
+    input {
+        margin: 0;
+        height: 35px;
+        width: 200px;
+        outline: none;
+        font-size: 1.1rem;
+        font-weight: 700;
+        vertical-align: bottom;
+    }
+    .dm-send {
+        cursor: pointer;
+        margin-left: -8px;
+        background-color: rgb(243, 167, 52);
+        display: inline-block;
+        line-height: 39px;
+        height: 39px;
+        width: 100px;
+        border-radius: 0 5px 5px 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+
+    .dm-send:hover {
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .content {
+        width: 960px;
+        margin-top: 20px;
+    }
+    #main{
+        font-size: 2rem;
+    }
+    .dm {
+        margin-bottom: 50px;
+
+        .dm-send {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            font-size: 1rem;
+        }
+
+        input {
+            height: 27px;
+        }
+    }
+}
+@media screen and (max-width:960px) {
+    .content {
+        width: 540px;
+        margin-top: 20px;
+    }
+    #main{
+        font-size: 2rem;
+    }
+    .dm {
+        margin-bottom: 50px;
+
+        .dm-send {
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        input {
+            height: 27px;
+        }
+    }
+}
+//弹幕随机
+.span {
+    position: absolute;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+.span:hover{
+    text-shadow: 0 5px 5px white; 
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+//入群须知部分
+.nav {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    a {
+        position: relative;
+        z-index: 5;
+        color: rgb(21, 67, 136);
+        font-size: 1.5rem;
+    }
+
+    a:hover {
+        color: red;
+    }
+    .page{
+        position: absolute;
+        opacity: 0;
+        width: 300px;
+        height: 500px;
+        font-size: 1.2rem;
+        line-height: 25px;
+        padding: 15px;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        span{
+            position: absolute;
+            top: -26px;
+            border-width: 13px;
+            border-style: solid;
+            border-color: transparent transparent rgba(0,0,0,0.5) transparent
+        }
+        h3{
+            margin-bottom: 15px;
+        }
+        p{
+            margin-top: 15px;
+        }
+    }
+    #page-1{
+        top: 40px;
+        left: -120px;
+        span{
+            right: 70px;
+        }
+    }
+    #page-2{
+        top: 40px;
+        right: -125px;
+        background: url("../img/1111222.jpg") no-repeat;
+        background-size: contain;
+        span{
+            left: 70px;
+            border-color: transparent transparent rgba(104, 59, 59, 0.979) transparent
+        }
+    }
+    .show{
+        opacity: 1;
+        transition: all 0.5s;
+    }
+}
+//广告部分
+@keyframes gg{
+    0%{
+        background-position: 0 0;
+    }
+    20%{
+        background-position: -200px 0;
+    }
+    40%{
+        background-position: 0 -300px;
+    }
+    60%{
+        background-position: -200px -300px;
+        filter: brightness(100%);
+    }
+    80%{
+        background-position: center center;
+        filter: brightness(1000%);
+    }
+    100%{
+        background-position: center center;
+        filter: brightness(100%);
+    }
+}
+#advertisement{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/123213.jpg") no-repeat;
+    background-position: center center;
+    animation: gg 5s 3s infinite;
+    z-index: 999;
+    cursor: pointer;
+    p{
+        text-align: center;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    h3{
+        margin-top: 8px;
+        text-indent: 50px;
+    }
+    span{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+//右侧nav
+.right-nav{
+    font-family: "Microsoft YaHei";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    color: white;
+    z-index: 5;
+    h5{
+        position: absolute;
+        top: 50px;
+        right: 51px;
+        width: 136px;
+        height: 38px;
+        line-height: 35px;
+        border: 1px solid transparent;
+        font-size: 1.1rem;
+        background: url("../img/ico_01.png") no-repeat 30px 8px;
+        text-indent: 70px;
+        cursor: pointer;
+        z-index: 10;
+    }
+    h5:hover{
+        border: 1px solid white;
+    }
+    .nav-main{
+        height: 100%;
+        background-color:rgba(0,0,0,0.5);
+        overflow: hidden;
+        transform: translateX(-240px);
+        transition: all 1s;
+        ul{
+            display: flex;
+            font-size: 1.3rem;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 140px;
+            a{
+                text-decoration: none;
+                color: white;
+                display: block;
+                height: 66px;
+            }
+        }
+        span{
+            position: absolute;
+            top: 150px;
+            left: 45px;
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            background-color: red;
+            transition: all 0.3s;
+        }
+    }
+    .show{
+        transform: translateX(0px); 
+    }
+}
