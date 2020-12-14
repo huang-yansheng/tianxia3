@@ -259,7 +259,7 @@ html,
     height: 100%;
     width: 240px;
     color: white;
-    z-index: 5;
+    z-index: 6;
     h5{
         position: absolute;
         top: 50px;
@@ -309,5 +309,121 @@ html,
     }
     .show{
         transform: translateX(0px); 
+    }
+}
+//friends部分
+#friends{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    transition: all 1.5s;
+    z-index: 9999;
+    .bg,ul{
+        height: 100%;
+    }
+    li{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+    }
+    #bg-a{
+        background: url("../img/法医.jpg") no-repeat;
+        background-size: cover;
+        z-index: 2;
+    }
+    #bg-b{
+        background: url("../img/男爵.jpg") no-repeat;
+        background-size: cover;
+    }
+    #bg-c{
+        background: url("../img/小号.jpg") no-repeat;
+        background-size: cover;
+    }
+    #bg-d{
+        background: url("../img/铁头.jpg") no-repeat;
+        background-size: cover;
+    }
+    #bg-e{
+        background: url("../img/yj.jpg") no-repeat;
+        background-size: cover;
+    }
+    #bg-f{
+        background: url("../img/wl.jpg") no-repeat;
+        background-size: cover;
+    }
+    .bg-item{
+        position: absolute;
+        font-family: "微软雅黑";
+        font-size: 2.5rem;
+    }
+    .bgbg{
+        opacity: 0;
+    }
+    p{
+        width: 60px;
+        transform: translateY(0px);
+        transition: all 1s;
+        opacity: 0;
+    }
+    button{
+        padding: 8px 25px;
+        margin-left: -20px;
+        outline: none;
+        color: rgb(0, 247, 255);
+        background-color: rgb(248, 0, 194);
+        transform: translateY(0px);
+        transition: all 1s 0.2s;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .sss{
+        opacity: 1;
+        p{
+            width: 60px;
+            transform: translateY(150px);
+            opacity: 1;
+        }
+        button{
+            padding: 8px 25px;
+            transform: translateY(180px);
+            opacity: 1;
+        }
+    }
+    #bg-a1{
+        right: 400px;
+    }
+    #bg-a2{
+        left: 300px;
+        p{
+            color: yellow;
+        }
+    }
+    #bg-a3{
+        left: 300px;
+        p{
+            color: rgb(73, 224, 42);
+        }
+    }
+    #bg-a4{
+        left: 500px;
+        p{
+            color: rgb(253, 2, 2);
+        }
+    }
+    #bg-a5{
+        right: 350px;
+        p{
+            color: rgb(0, 0, 0);
+        }
+    }
+    #bg-a6{
+        left: 150px;
+        p{
+            color: rgb(15, 135, 247);
+        }
     }
 }

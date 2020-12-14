@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 ul {
   margin: 0;
@@ -256,7 +257,7 @@ html,
   height: 100%;
   width: 240px;
   color: white;
-  z-index: 5;
+  z-index: 6;
 }
 .right-nav h5 {
   position: absolute;
@@ -307,6 +308,122 @@ html,
 }
 .right-nav .show {
   transform: translateX(0px);
+}
+
+#friends {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  transform: translateY(100%);
+  transition: all 1.5s;
+  z-index: 9999;
+}
+#friends .bg, #friends ul {
+  height: 100%;
+}
+#friends li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+#friends #bg-a {
+  background: url("../img/法医.jpg") no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+#friends #bg-b {
+  background: url("../img/男爵.jpg") no-repeat;
+  background-size: cover;
+}
+#friends #bg-c {
+  background: url("../img/小号.jpg") no-repeat;
+  background-size: cover;
+}
+#friends #bg-d {
+  background: url("../img/铁头.jpg") no-repeat;
+  background-size: cover;
+}
+#friends #bg-e {
+  background: url("../img/yj.jpg") no-repeat;
+  background-size: cover;
+}
+#friends #bg-f {
+  background: url("../img/wl.jpg") no-repeat;
+  background-size: cover;
+}
+#friends .bg-item {
+  position: absolute;
+  font-family: "微软雅黑";
+  font-size: 2.5rem;
+}
+#friends .bgbg {
+  opacity: 0;
+}
+#friends p {
+  width: 60px;
+  transform: translateY(0px);
+  transition: all 1s;
+  opacity: 0;
+}
+#friends button {
+  padding: 8px 25px;
+  margin-left: -20px;
+  outline: none;
+  color: #00f7ff;
+  background-color: #f800c2;
+  transform: translateY(0px);
+  transition: all 1s 0.2s;
+  opacity: 0;
+  cursor: pointer;
+}
+#friends .sss {
+  opacity: 1;
+}
+#friends .sss p {
+  width: 60px;
+  transform: translateY(150px);
+  opacity: 1;
+}
+#friends .sss button {
+  padding: 8px 25px;
+  transform: translateY(180px);
+  opacity: 1;
+}
+#friends #bg-a1 {
+  right: 400px;
+}
+#friends #bg-a2 {
+  left: 300px;
+}
+#friends #bg-a2 p {
+  color: yellow;
+}
+#friends #bg-a3 {
+  left: 300px;
+}
+#friends #bg-a3 p {
+  color: #49e02a;
+}
+#friends #bg-a4 {
+  left: 500px;
+}
+#friends #bg-a4 p {
+  color: #fd0202;
+}
+#friends #bg-a5 {
+  right: 350px;
+}
+#friends #bg-a5 p {
+  color: black;
+}
+#friends #bg-a6 {
+  left: 150px;
+}
+#friends #bg-a6 p {
+  color: #0f87f7;
 }
 
 /*# sourceMappingURL=style.css.map */
