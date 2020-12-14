@@ -1,0 +1,10 @@
+body {
+  background: url("../img/123123.png") no-repeat;
+  background-size: contain;
+}
+
+#box {
+  display: none;
+}
+
+/*# sourceMappingURL=phone.css.map */
