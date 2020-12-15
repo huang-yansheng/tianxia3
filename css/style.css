@@ -320,7 +320,8 @@ html,
   transition: all 1.5s;
   z-index: 9999;
 }
-#friends .bg, #friends ul {
+#friends .bg,
+#friends ul {
   height: 100%;
 }
 #friends li {
@@ -424,6 +425,178 @@ html,
 }
 #friends #bg-a6 p {
   color: #0f87f7;
+}
+
+#cp {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#cp .cpdd {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 1000px;
+  height: 500px;
+  background-color: #ee94a3;
+  padding: 20px 10px 20px 20px;
+}
+#cp #cpbtn {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 450px;
+}
+#cp #cpbtn a {
+  display: block;
+  padding: 10px 25px;
+  background-color: #1382cc;
+  color: white;
+  text-decoration: none;
+  margin: 30px;
+}
+#cp #cpbtn a:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+#cp .cpdd-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 150px;
+  height: 200px;
+  background-color: #834f4f;
+  background-size: cover;
+  cursor: pointer;
+}
+#cp .cpdd-item:hover {
+  box-shadow: 0 15px 15px 10px rgba(0, 0, 0, 0.6);
+}
+#cp p {
+  font-family: "仿宋";
+  font-weight: 700;
+  line-height: 150px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.cp-1 {
+  background: url("../img/照片111.jpg") no-repeat;
+}
+
+.cp-2 {
+  background: url("../img/照片2.jpg") no-repeat;
+}
+
+.cp-3 {
+  background: url("../img/照片3.jpg") no-repeat;
+}
+
+.cp-4 {
+  background: url("../img/照片4.jpg") no-repeat;
+}
+
+.cp-5 {
+  background: url("../img/照片5.jpg") no-repeat;
+}
+
+.cp-6 {
+  background: url("../img/照片6.jpg") no-repeat;
+}
+
+.cp-7 {
+  background: url("../img/照片7.jpg") no-repeat;
+}
+
+.cp-8 {
+  background: url("../img/照片8.jpg") no-repeat;
+}
+
+@keyframes love {
+  0% {
+    transform: rotateY(0deg);
+    filter: brightness(100%);
+  }
+  60% {
+    transform: rotateY(3600deg);
+    filter: brightness(1000%);
+  }
+  100% {
+    transform: rotateY(3600deg);
+    background-image: none;
+    background-color: #fff;
+  }
+}
+.choice {
+  display: none;
+}
+
+.shows {
+  display: block;
+  transition: all 1s;
+  animation: love 5s 1.2s ease-out forwards;
+}
+
+.cpbtn-shows {
+  transform: translateX(-160px);
+  transition: all 1s;
+}
+
+.start .cpdd-item {
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.start .cp-1 {
+  transform: translateX(-400px) translateY(-140px);
+  transition: all 1.5s;
+}
+.start .cp-2 {
+  transform: translateX(-200px) translateY(-140px);
+  transition: all 1.5s;
+}
+.start .cp-3 {
+  transform: translateX(200px) translateY(-140px);
+  transition: all 1.5s;
+}
+.start .cp-4 {
+  transform: translateX(400px) translateY(-140px);
+  transition: all 1.5s;
+}
+.start .cp-5 {
+  transform: translateX(-400px) translateY(140px);
+  transition: all 1.5s;
+}
+.start .cp-6 {
+  transform: translateX(-200px) translateY(140px);
+  transition: all 1.5s;
+}
+.start .cp-7 {
+  transform: translateX(200px) translateY(140px);
+  transition: all 1.5s;
+}
+.start .cp-8 {
+  transform: translateX(400px) translateY(140px);
+  transition: all 1.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
