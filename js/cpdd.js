@@ -56,7 +56,6 @@ let card = {
                     function (data) {
                         let val = Math.floor(Math.random() * data.length)
                         let r = data[val];
-                        console.log(data[val].name)
                         let h4 = $("<h4></h4>");
                         h4.text(r.name).css({ "textAlign": "center", "fontSize": "2rem", "paddingTop": "50px" })
                         that.append(h4);
@@ -70,6 +69,12 @@ let card = {
                                 $(".say-item").eq(2).text(`群财富榜:${r.money}`)
                                 $(".say-item").eq(3).text(`简介:${r.xg}`)
                                 $(".say-item").eq(4).text(card.text);
+                            }else{
+                                $(".say-item").eq(0).text("孤寡孤寡孤寡孤寡")
+                                $(".say-item").eq(1).text("单身狗单身狗单身狗")
+                                $(".say-item").eq(2).text("就骂你就骂你就骂你")
+                                $(".say-item").eq(3).text("反弹无效反弹无效")
+                                $(".say-item").eq(4).text("你注定孤独一辈子了");
                             }
                         }, 2000)
                     }
@@ -90,7 +95,6 @@ let card = {
         $(".shows").empty().removeClass("shows");
         $(".say").css("opacity", "0")
         card.status = 1;
-        console.log(card.status);
     }
 }
 //开始
