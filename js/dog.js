@@ -16,7 +16,7 @@ let timer = setTimeout(bgTime,3000);
 
 
 function bgTime() {
-    if(x>5){
+    if(x>bgs.length-1){
         x=0;
     }
     for (let i = 0; i < bgs.length; i++) {

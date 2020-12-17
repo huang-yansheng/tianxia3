@@ -402,7 +402,10 @@ html,
         background: url("../img/wl.jpg") no-repeat;
         background-size: cover;
     }
-
+    #bg-g{
+        background: url("../img/fb38bc2d8620e449a994449e3ca6c59.jpg") no-repeat;
+        background-size: cover;
+    }
     .bg-item {
         position: absolute;
         font-family: "微软雅黑";
@@ -438,7 +441,7 @@ html,
 
         p {
             width: 60px;
-            transform: translateY(150px);
+            transform: translateY(140px);
             opacity: 1;
         }
 
@@ -490,6 +493,12 @@ html,
 
         p {
             color: rgb(15, 135, 247);
+        }
+    }
+    #bg-a7{
+        right: 300px;
+        p{
+            color:rgb(252, 63, 189)
         }
     }
 }
@@ -672,5 +681,25 @@ html,
     .cp-8 {
         transform: translateX(400px) translateY(140px);
         transition: all 1.5s;
+    }
+}
+//cpdd描述
+.say{
+    position: absolute;
+    opacity: 0;
+    width: 350px;
+    height: 400px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 50px;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: all 1.5s;
+    li{
+        height: 60px;
+        text-align: center;
+        font-size: 1.2rem;
     }
 }

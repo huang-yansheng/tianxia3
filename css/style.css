@@ -354,6 +354,10 @@ html,
   background: url("../img/wl.jpg") no-repeat;
   background-size: cover;
 }
+#friends #bg-g {
+  background: url("../img/fb38bc2d8620e449a994449e3ca6c59.jpg") no-repeat;
+  background-size: cover;
+}
 #friends .bg-item {
   position: absolute;
   font-family: "微软雅黑";
@@ -385,7 +389,7 @@ html,
 }
 #friends .sss p {
   width: 60px;
-  transform: translateY(150px);
+  transform: translateY(140px);
   opacity: 1;
 }
 #friends .sss button {
@@ -425,6 +429,12 @@ html,
 }
 #friends #bg-a6 p {
   color: #0f87f7;
+}
+#friends #bg-a7 {
+  right: 300px;
+}
+#friends #bg-a7 p {
+  color: #fc3fbd;
 }
 
 #cp {
@@ -597,6 +607,26 @@ html,
 .start .cp-8 {
   transform: translateX(400px) translateY(140px);
   transition: all 1.5s;
+}
+
+.say {
+  position: absolute;
+  opacity: 0;
+  width: 350px;
+  height: 400px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 50px;
+  padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  transition: all 1.5s;
+}
+.say li {
+  height: 60px;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
