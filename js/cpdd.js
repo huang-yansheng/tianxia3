@@ -64,7 +64,7 @@ let card = {
                         Timers = setTimeout(function () {
                             console.log(val);
                             $(".say").css("opacity", "1");
-                            if (val <= data.length - 5) {
+                            if (val <= data.length - 6) {
                                 $(".say-item").eq(0).text(`姓名:${r.name}`)
                                 $(".say-item").eq(1).text(`预计年龄:${r.age}`)
                                 $(".say-item").eq(2).text(`群财富榜:${r.money}`)
