@@ -57,7 +57,7 @@ let card = {
                         let val = Math.floor(Math.random() * data.length)
                         let r = data[val];
                         let h4 = $("<h4></h4>");
-                        h4.text(r.name).css({ "textAlign": "center", "fontSize": "2rem", "paddingTop": "50px" })
+                        h4.text(r.name).css({ "textAlign": "center", "fontSize": "2rem", "paddingTop": "50px"})
                         that.append(h4);
                         card.numtext();
                         Timers = setTimeout(function () {
@@ -66,14 +66,14 @@ let card = {
                             if (val <= data.length - 6) {
                                 $(".say-item").eq(0).text(`姓名:${r.name}`)
                                 $(".say-item").eq(1).text(`预计年龄:${r.age}`)
-                                $(".say-item").eq(2).text(`群财富榜:${r.money}`)
+                                $(".say-item").eq(2).text(`可撩程度:${r.money}`)
                                 $(".say-item").eq(3).text(`简介:${r.xg}`)
                                 $(".say-item").eq(4).text(card.text);
                             }else{
-                                $(".say-item").eq(0).text("孤寡孤寡孤寡孤寡")
-                                $(".say-item").eq(1).text("单身狗单身狗单身狗")
-                                $(".say-item").eq(2).text("就骂你就骂你就骂你")
-                                $(".say-item").eq(3).text("反弹无效反弹无效")
+                                $(".say-item").eq(0).text("圣诞节快乐")
+                                $(".say-item").eq(1).text("玩玩手机看看电视")
+                                $(".say-item").eq(2).text("习惯了就好")
+                                $(".say-item").eq(3).text("反正......")
                                 $(".say-item").eq(4).text("你注定孤独一辈子了");
                             }
                         }, 2000)
