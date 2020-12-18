@@ -87,7 +87,6 @@ let card = {
 
     },
     end: function () {
-        clearTimeout(Timers);
         $(".say").css("opacity", "0");
         $("#dddd").text("哦吼，你反悔了");
         $(".cpdd-item").removeClass("choice");
@@ -96,6 +95,7 @@ let card = {
         $(".shows").empty().removeClass("shows");
         $(".say").css("opacity", "0")
         card.status = 1;
+        clearTimeout(Timers);
     }
 }
 //开始
