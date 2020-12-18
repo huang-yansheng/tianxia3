@@ -2,6 +2,7 @@ let bgs = document.querySelectorAll(".bgbg");
 let x = 0;
 $(function () {
     $(".dog").on("click", function (e) {
+        audio.play();
         e.preventDefault();
         $("#friends").css("transform", " translateY(0%)");
     })

@@ -4,6 +4,7 @@
      */
 let Timer;
 let clock = new Date().getTime();//当前秒数
+let audio = document.querySelector("#music");
 let s = 1000;//设定一个时间差
 let card = {
     text: "",
@@ -101,6 +102,7 @@ let card = {
 $(function () {
     $(".ddd").on("click", function (e) {
         e.preventDefault();
+        audio.play();
         $("#cp").css("display", "block");
     });
     $(".cpdd-item").on("click", card.start)
